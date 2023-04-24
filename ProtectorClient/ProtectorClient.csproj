@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{448D5CA7-AC61-4384-AFC1-D0E36258ABAA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProtectorClient</RootNamespace>
+    <AssemblyName>ProtectorClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Zip.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.Win.C1Themes.2, Version=2.0.20151.38, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Delegates.cs" />
+    <Compile Include="DeviceClass.cs" />
+    <Compile Include="DGVC.cs" />
+    <Compile Include="FormDeviceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeviceSetting.Designer.cs">
+      <DependentUpon>FormDeviceSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeviceStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeviceStatus.Designer.cs">
+      <DependentUpon>FormDeviceStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCity.Designer.cs">
+      <DependentUpon>FormEditCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDevice.Designer.cs">
+      <DependentUpon>FormEditDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditLocation.Designer.cs">
+      <DependentUpon>FormEditLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditUser.Designer.cs">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGraph.Designer.cs">
+      <DependentUpon>FormGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetCity.Designer.cs">
+      <DependentUpon>FormSetCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetLocation.Designer.cs">
+      <DependentUpon>FormSetLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericUpDownDataGridCell.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TriStateCheckBoxTreeView.cs">
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <EmbeddedResource Include="FormDeviceSetting.resx">
+      <DependentUpon>FormDeviceSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeviceStatus.resx">
+      <DependentUpon>FormDeviceStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCity.resx">
+      <DependentUpon>FormEditCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDevice.resx">
+      <DependentUpon>FormEditDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditLocation.resx">
+      <DependentUpon>FormEditLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditUser.resx">
+      <DependentUpon>FormEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetCity.resx">
+      <DependentUpon>FormSetCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetLocation.resx">
+      <DependentUpon>FormSetLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Amoniac\download %281%29.jpg" />
+    <Content Include="Images\Amoniac\download %284%29.jpg" />
+    <Content Include="Images\Amoniac\download %288%29.jpg" />
+    <Content Include="Images\Amoniac\download.jpg" />
+    <Content Include="Images\Amoniac\images %281%29.jpg" />
+    <Content Include="Images\Ampere\download %283%29.jpg" />
+    <Content Include="Images\Ampere\download.jpg" />
+    <Content Include="Images\Ampere\images.jpg" />
+    <Content Include="Images\Buttons\can-stock-photo_csp15202562.jpg" />
+    <Content Include="Images\Buttons\Off.png" />
+    <Content Include="Images\Buttons\on-off-switch-icon.jpg" />
+    <Content Include="Images\Buttons\On.png" />
+    <Content Include="Images\Buttons\onoff.jpg" />
+    <Content Include="Images\Buttons\onoff.png" />
+    <Content Include="Images\Camera\download %281%29.jpg" />
+    <Content Include="Images\Camera\download %282%29.jpg" />
+    <Content Include="Images\Camera\download.jpg" />
+    <Content Include="Images\Camera\images %281%29.jpg" />
+    <Content Include="Images\Camera\images.jpg" />
+    <Content Include="Images\DCN\DCN.png" />
+    <Content Include="Images\DCN\socket.png" />
+    <Content Include="Images\DCN\socket1.png" />
+    <Content Include="Images\DCN\socket2.png" />
+    <Content Include="Images\DCN\socket3.png" />
+    <Content Include="Images\Device\error.gif" />
+    <Content Include="Images\Device\error.png" />
+    <Content Include="Images\Device\gray.gif" />
+    <Content Include="Images\Device\gray.png" />
+    <Content Include="Images\Device\normal.gif" />
+    <Content Include="Images\Device\normal.png" />
+    <Content Include="Images\Device\warning.gif" />
+    <Content Include="Images\Device\warning.png" />
+    <Content Include="Images\DIG\DIG.jpg" />
+    <Content Include="Images\DIG\download %282%29.jpg" />
+    <Content Include="Images\DIG\download %283%29.jpg" />
+    <Content Include="Images\DIG\download.jpg" />
+    <Content Include="Images\error\error.gif" />
+    <Content Include="Images\error\error.png" />
+    <Content Include="Images\error\error1.gif" />
+    <Content Include="Images\error\error1.png" />
+    <Content Include="Images\error\normal.png" />
+    <Content Include="Images\error\normal1.png" />
+    <Content Include="Images\error\socket.png" />
+    <Content Include="Images\error\warning.gif" />
+    <Content Include="Images\error\warning.png" />
+    <Content Include="Images\error\warning1.gif" />
+    <Content Include="Images\error\warning1.png" />
+    <Content Include="Images\GAS\GAS.jpg" />
+    <Content Include="Images\GAS\GAS.png" />
+    <Content Include="Images\HUM\download %281%29.jpg" />
+    <Content Include="Images\HUM\download.jpg" />
+    <Content Include="Images\HUM\HUM.jpg" />
+    <Content Include="Images\HUM\HUM.png" />
+    <Content Include="Images\MAG\download %282%29.jpg" />
+    <Content Include="Images\MAG\download.jpg" />
+    <Content Include="Images\MAG\MAG.jpg" />
+    <Content Include="Images\MOT\download %281%29.jpg" />
+    <Content Include="Images\MOT\download.jpg" />
+    <Content Include="Images\MOT\MOT.jpg" />
+    <Content Include="Images\MOT\motion2.jpg" />
+    <Content Include="Images\port\download %281%29.jpg" />
+    <Content Include="Images\port\download %2810%29.jpg" />
+    <Content Include="Images\port\download %2811%29.jpg" />
+    <Content Include="Images\port\download %2812%29.jpg" />
+    <Content Include="Images\port\download %282%29.jpg" />
+    <Content Include="Images\port\download %283%29.jpg" />
+    <Content Include="Images\port\download %287%29.jpg" />
+    <Content Include="Images\port\download %288%29.jpg" />
+    <Content Include="Images\port\download %289%29.jpg" />
+    <Content Include="Images\port\images %281%29.jpg" />
+    <Content Include="Images\Report\download %281%29.jpg" />
+    <Content Include="Images\Report\download.jpg" />
+    <Content Include="Images\Report\images %281%29.jpg" />
+    <Content Include="Images\Report\images.jpg" />
+    <Content Include="Images\Setting\download %281%29.jpg" />
+    <Content Include="Images\Setting\download %282%29.jpg" />
+    <Content Include="Images\Setting\download %283%29.jpg" />
+    <Content Include="Images\Setting\download.jpg" />
+    <Content Include="Images\Setting\images %281%29.jpg" />
+    <Content Include="Images\Setting\images %282%29.jpg" />
+    <Content Include="Images\Setting\images.jpg" />
+    <Content Include="Images\SIG\SIG.jpg" />
+    <Content Include="Images\sms\download %281%29.jpg" />
+    <Content Include="Images\sms\download %2813%29.jpg" />
+    <Content Include="Images\sms\download %282%29.jpg" />
+    <Content Include="Images\sms\download %283%29.jpg" />
+    <Content Include="Images\sms\download.jpg" />
+    <Content Include="Images\sms\images %281%29.jpg" />
+    <Content Include="Images\sms\images %282%29.jpg" />
+    <Content Include="Images\sms\images %283%29.jpg" />
+    <Content Include="Images\sms\images %284%29.jpg" />
+    <Content Include="Images\sms\images.jpg" />
+    <Content Include="Images\TEM\download %281%29.jpg" />
+    <Content Include="Images\TEM\download.jpg" />
+    <Content Include="Images\TEM\TEM.jpg" />
+    <Content Include="Images\TEM\TEM.png" />
+    <Content Include="Images\User\man1.jpg" />
+    <Content Include="Images\User\man2.jpg" />
+    <Content Include="Images\User\man3.jpg" />
+    <Content Include="Images\User\woman1.jpg" />
+    <Content Include="Images\User\woman2.jpg" />
+    <Content Include="Images\User\woman3.jpg" />
+    <Content Include="Images\User\woman4.jpg" />
+    <Content Include="Images\WAT\download %282%29.jpg" />
+    <Content Include="Images\WAT\images.jpg" />
+    <Content Include="Images\WAT\WAT.jpg" />
+    <None Include="Resources\device.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GridViewCheckBoxColumn\GridViewCheckBoxColumn.csproj">
+      <Project>{0edb5ff6-cb2a-43ae-a0c9-84514a54fa4a}</Project>
+      <Name>GridViewCheckBoxColumn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ImageLib\ImageLib.csproj">
+      <Project>{6c82324b-fa15-4049-906d-fdccbe3f5ea6}</Project>
+      <Name>ImageLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityLib\SecurityLib.csproj">
+      <Project>{e815658f-107e-4156-9c37-b1ac12a7fbbb}</Project>
+      <Name>SecurityLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Settings\SettingsLib.csproj">
+      <Project>{03ea48f0-75f0-4608-acce-b5de1befdc33}</Project>
+      <Name>SettingsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToolsLib\ToolsLib.csproj">
+      <Project>{6cdc695b-8c66-42a7-a375-7d048edbfa0a}</Project>
+      <Name>ToolsLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebServiceLib\WebServiceLib.csproj">
+      <Project>{8e3a72ba-ce0b-4144-85e1-7587296140c9}</Project>
+      <Name>WebServiceLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

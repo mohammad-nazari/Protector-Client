@@ -1,0 +1,13 @@
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\SecurityLib\bin\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\SecurityLib\bin\Debug\SecurityLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\SecurityLib\obj\Debug\SecurityLib.csprojResolveAssemblyReference.cache
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\SecurityLib\obj\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\SecurityLib\obj\Debug\SecurityLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\SecurityLib\bin\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\SecurityLib\bin\Debug\SecurityLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\SecurityLib\obj\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\SecurityLib\obj\Debug\SecurityLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\SecurityLib\bin\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\SecurityLib\bin\Debug\SecurityLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\SecurityLib\obj\Debug\SecurityLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\SecurityLib\obj\Debug\SecurityLib.pdb

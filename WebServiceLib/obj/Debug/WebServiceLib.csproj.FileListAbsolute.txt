@@ -1,0 +1,16 @@
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\WebServiceLib\bin\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\WebServiceLib\bin\Debug\WebServiceLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\WebServiceLib\obj\Debug\WebServiceLib.csprojResolveAssemblyReference.cache
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\WebServiceLib\obj\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\WebServiceLib\obj\Debug\WebServiceLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\bin\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\bin\Debug\WebServiceLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\obj\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\obj\Debug\WebServiceLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\bin\Debug\WebServiceLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\WebServiceLib\obj\Debug\WebServiceLib.csprojResolveAssemblyReference.cache
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\WebServiceLib\bin\Debug\WebServiceLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\WebServiceLib\bin\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\WebServiceLib\bin\Debug\WebServiceLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\WebServiceLib\obj\Debug\WebServiceLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\WebServiceLib\obj\Debug\WebServiceLib.pdb

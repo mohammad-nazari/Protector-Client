@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClientSettings>
+	<SensorsSetting>
+		<SensorName>Temprature</SensorName>
+		<TypeName>Minimum</TypeName>
+		<LevelName>Critical</LevelName>
+	</SensorsSetting>
+	<SensorsSettingMono>
+		<SensorName>Gass</SensorName>
+		<LevelName>Critical</LevelName>
+	</SensorsSettingMono>
+	<LevelColors>
+		<LevelName>Critical</LevelName>
+		<ColorName>black</ColorName>
+	</LevelColors>
+	<TempratureTypeShow>Centigrade</TempratureTypeShow>
+</ClientSettings>

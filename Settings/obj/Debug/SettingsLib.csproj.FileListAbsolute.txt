@@ -1,0 +1,16 @@
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Debug\SettingsLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Debug\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Debug\SettingsLib.csprojResolveAssemblyReference.cache
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Debug\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\Settings\bin\Debug\SettingsLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\Settings\bin\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\Settings\bin\Debug\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\Settings\obj\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorInterfaceClient\Settings\obj\Debug\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\Settings\bin\Debug\SettingsLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\Settings\bin\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\Settings\bin\Debug\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\Settings\obj\Debug\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\ProtectorClient\Settings\obj\Debug\SettingsLib.pdb

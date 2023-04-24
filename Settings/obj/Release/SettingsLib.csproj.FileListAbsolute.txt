@@ -1,0 +1,6 @@
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Release\SettingsLib.dll.config
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Release\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\bin\Release\SettingsLib.pdb
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Release\SettingsLib.csprojResolveAssemblyReference.cache
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Release\SettingsLib.dll
+F:\Projects\Behsaz Control\EnvironmentProtector\WebService\Client\Desktop\C#\BackUp\ProtectorInterfaceClientNewAll-94-07-23\Settings\obj\Release\SettingsLib.pdb

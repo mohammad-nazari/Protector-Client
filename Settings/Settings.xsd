@@ -1,0 +1,172 @@
+﻿<?xml version="1.0"?>
+
+<!--
+
+file      : examples/cxx/tree/setting/setting.xsd
+copyright : not copyrighted - public domain
+
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<xsd:simpleType name="SettingColorFormat">
+		<xsd:annotation>
+			<xsd:documentation>The color entity indicates the color of an element. Color may be represented as hexadecimal RGB triples, as in HTML, or as hexadecimal ARGB tuples, with the A indicating alpha of transparency. An alpha value of 00 is totally transparent; FF is totally opaque. If RGB is used, the A value is assumed to be FF. For instance, the RGB value "#800080" represents purple. An ARGB value of "#40800080" would be a transparent purple. As in SVG 1.1, colors are defined in terms of the sRGB color space (IEC 61966).</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:pattern value="#[\dA-Fa-f]{6}([\dA-Fa-f][\dA-Fa-f])?"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="SettingLevel">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Normal" />
+			<xsd:enumeration value="Disable" />
+			<xsd:enumeration value="Warning" />
+			<xsd:enumeration value="Minor" />
+			<xsd:enumeration value="Major" />
+			<xsd:enumeration value="Critical" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="SettingColors">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="bisque" />
+			<xsd:enumeration value="blue" />
+			<xsd:enumeration value="brown" />
+			<xsd:enumeration value="cyan" />
+			<xsd:enumeration value="darkred" />
+			<xsd:enumeration value="gray" />
+			<xsd:enumeration value="green" />
+			<xsd:enumeration value="greenyellow" />
+			<xsd:enumeration value="info" />
+			<xsd:enumeration value="khaki" />
+			<xsd:enumeration value="lightslategray" />
+			<xsd:enumeration value="menu" />
+			<xsd:enumeration value="navy" />
+			<xsd:enumeration value="orange" />
+			<xsd:enumeration value="pink" />
+			<xsd:enumeration value="purple" />
+			<xsd:enumeration value="red" />
+			<xsd:enumeration value="salmon" />
+			<xsd:enumeration value="silver" />
+			<xsd:enumeration value="turquoise" />
+			<xsd:enumeration value="yellow" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="SettingSensor">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration id="TEM" value="TEMPERATURE" />
+			<xsd:enumeration id="HUM" value="HUMIDITY" />
+			<xsd:enumeration id="ACV" value="ACVOLTAGE" />
+			<xsd:enumeration id="ACV1" value="ACVOLTAGE1" />
+			<xsd:enumeration id="ACV2" value="ACVOLTAGE2" />
+			<xsd:enumeration id="ACV3" value="ACVOLTAGE3" />
+			<xsd:enumeration id="ACA" value="ACAMPERE" />
+			<xsd:enumeration id="ACA1" value="ACAMPERE1" />
+			<xsd:enumeration id="ACA2" value="ACAMPERE2" />
+			<xsd:enumeration id="ACA3" value="ACAMPERE3" />
+			<xsd:enumeration id="DCV" value="DCVOLTAGE" />
+			<xsd:enumeration id="DCA" value="DCAMPERE" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="SettingSensorMono">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration id="GAS" value="GAS" />
+			<xsd:enumeration id="SMK" value="SMOKE" />
+			<xsd:enumeration id="MAG" value="MAGNET" />
+			<xsd:enumeration id="MOT" value="MOTION" />
+			<xsd:enumeration id="WAT" value="WATER" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="SettingTempratureType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Show Temprature as Centigrade or Fahrenheit
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Centigrade" />
+			<xsd:enumeration value="Fahrenheit" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="SettingLevelColor">
+		<xsd:annotation>
+			<xsd:documentation>
+				Set Level Color
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="LevelName" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="ColorName" type="SettingColors" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="SettingSensors">
+		<xsd:annotation>
+			<xsd:documentation>
+				Set Level Color
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="SensorName" type="SettingSensor" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="MinimumLevel" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="MaximumLevel" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="MaximumThresholdLevel" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="MinimumThresholdLevel" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="SettingSensorsMono">
+		<xsd:annotation>
+			<xsd:documentation>
+				Set Level Color
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="SensorName" type="SettingSensorMono" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+			<xsd:element name="LevelName" type="SettingLevel" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Settings">
+		<xsd:annotation>
+			<xsd:documentation>
+				All settings
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="SensorsSetting" type="SettingSensors" minOccurs="0" maxOccurs="unbounded">
+			</xsd:element>
+			<xsd:element name="SensorsSettingMono" type="SettingSensorsMono" minOccurs="0" maxOccurs="unbounded">
+			</xsd:element>
+			<xsd:element name="LevelColors" type="SettingLevelColor" minOccurs="0" maxOccurs="unbounded">
+			</xsd:element>
+			<xsd:element name="TempratureTypeShow" type="SettingTempratureType" minOccurs="1" maxOccurs="1">
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="ClientSettings" type="Settings">
+		<xsd:annotation>
+			<xsd:documentation>
+				The setting element is a root of the Setting XML vocabulary.
+				Every conforming document should start with this element.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+</xsd:schema>
